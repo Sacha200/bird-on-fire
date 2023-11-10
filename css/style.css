@@ -1,0 +1,144 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  margin: 0;
+  background: #252525;
+  display: flex;
+  flex-direction: row;
+  font-family: 'Mina', sans-serif;
+  flex-direction: row;
+  font-family: 'Mina', sans-serif;
+
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+#background {
+  background-color: #252525;
+  width: 600px;
+  height: 600px;
+}
+
+#score {
+  z-index: 1000;
+  color: white;
+  font-size: 75px;
+}
+
+.w50 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.w25 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.space-around {
+  justify-content: space-around;
+}
+
+
+/* CSS */
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 7px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.off {
+  background-color: rgb(244, 64, 64);
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.off:hover {
+  background-color: rgb(244, 64, 64);
+
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 7px;
+  }
+}
+
+.carousel {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+
+.carousel img {
+  width: 30%;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: 0.5s;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.carousel img:hover,
+.players img:hover {
+  transform: scale(1.1);
+}
+
+.carousel img:hover:not(:hover),
+.players img:hover:not(:hover) {
+  transform: scale(1);
+}
+
+.carousel img:active,
+.players img:active {
+  transform: scale(1.1);
+}
+
+.players {
+  margin-top: 40px;
+}
+
+.players img {
+  width: 10%;
+  cursor: pointer;
+  transition: 0.5s;
+
+
+  background-position: center;
+  width: 600px;
+  height: 600px;
+}

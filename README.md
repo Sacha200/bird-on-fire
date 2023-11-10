@@ -1,2 +1,2 @@
-# bird-on-fire-
-bird-on-fire
+# bird-on-fire
+flappy bird game
