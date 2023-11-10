@@ -1,5 +1,7 @@
+=
 <!DOCTYPE html>
 <html lang="en">
+​
 
 <head>
   <meta charset="UTF-8">
@@ -9,20 +11,50 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Mina:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-
+  ​
 </head>
+​
 
 <body>
-
-  <button id="onoff">On/Off Music</button>
-  <div>
-    <div id="score">Score: 0</div>
-    <canvas id="background"></canvas>
+  ​
+  <div class="w25 first">
+    <h2>Changer les skins</h2>
+    <div class="carousel">
+      <img src="img/backgroundnew1.jpg" alt="">
+      <img src="img/backgroundnew2.jpg" alt="">
+    </div>
+    <div class="carousel">
+      <img src="img/backgroundnew3.jpg" alt="">
+      <img src="img/backgroundnew4.jpg" alt="">
+    </div>
+    <div class="players">
+      <img src="img/playerBlue.png" alt="">
+      <img src="img/playerGreen.png" alt="">
+      <img src="img/playerRed.png" alt="">
+      <img src="img/playerYellow.png" alt="">
+      <img src="img/playerPurple.png" alt="">
+    </div>
   </div>
-
-  </script>
-  >>>>>>> 07faabe617b6b1b26e2c176efec0d3b11f102eb8
+  <div class="w50">
+    <canvas id="background">
+    </canvas>
+  </div>
+  <div class="w25 space-around">
+    <h2>Effets sonores</h2>
+    <div class="row">
+      <button class="button-74" id="karim">Karim</button>
+      <button class="button-74" id="antonin">Antonin</button>
+    </div>
+    <button class="button-74 off" role="button" id="onoff">Son: OFF</button>
+    <h2>Paramètres</h2>
+    <button class="button-74" id="modeButton">Easy Mode</button>
+    <button class="button-74" role="button" id="restart">Restart</button>
+    <h3>Made by Antonin, Sacha & Karim</h3>
+  </div>
+  ​
+  ​
   <script src="game.js"></script>
 </body>
+​
 
 </html>
