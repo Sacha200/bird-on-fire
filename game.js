@@ -46,7 +46,6 @@ toppipe.src = "img/toppipe.png";
 let bottompipe = new Image();
 bottompipe.src = "img/bottompipe.png";
 
-<<<<<<< HEAD
 let musicSound = new Audio();
 musicSound.src = "sounds/music.mp3";
 musicSound.loop = true;
@@ -139,13 +138,12 @@ function initPipes() {
     bottompipeY: bottompipeY,
     bottompipeHeight: randomHeight(-150, -240),
     passed: false
-=======
+
     toppipeHeight: randomHeight(100, 330),
     bottompipeX: boardWidth,
     bottompipeY: bottompipeY,
     bottompipeHeight: bottompipeHeight,
     passed: false, // Nouvelle propriété pour marquer le tuyau comme non passé
->>>>>>> 07faabe617b6b1b26e2c176efec0d3b11f102eb8
   });
 
   pipes.push({
@@ -178,14 +176,11 @@ function drawPipes() {
     pipes[i].bottompipeX -= bottompipeSpeed;
 
     if (pipes[i].toppipeX + toppipeWidth < player1X && !pipes[i].passed) {
-<<<<<<< HEAD
       score += 1;
       pipes[i].passed = true;
-=======
       // Le joueur a passé ce tuyau
       score += 1; // Incrémente le score de 1 à chaque passage de tuyau
       pipes[i].passed = true; // Marque le tuyau comme passé
->>>>>>> 07faabe617b6b1b26e2c176efec0d3b11f102eb8
     }
 
     if (pipes[i].toppipeX + toppipeWidth < 0) {
@@ -198,9 +193,8 @@ function drawPipes() {
       pipes[i].bottompipeX = boardWidth;
       pipes[i].bottompipeHeight = randomHeight(-150, -270);
       pipes[i].passed = false;
-=======
+
       pipes[i].bottompipeHeight = bottompipeHeight
->>>>>>> 07faabe617b6b1b26e2c176efec0d3b11f102eb8
     }
   }
 }
