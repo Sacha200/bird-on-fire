@@ -33,7 +33,7 @@ Ce projet nécessite :
    - Ouvrir http://localhost/phpmyadmin
    - Créer une nouvelle base de données nommée `bird-on-fire`
    - Importer le fichier `flappybird.sql` (onglet "Importer")
-5. **Lancer le jeu** : http://localhost/bird-on-fire-/index.php
+5. **Lancer le jeu** : http://localhost/bird-on-fire-/index.html
 
 ### Option 2 : Avec Laragon (Moderne et automatique)
 1. **Télécharger et installer Laragon** : https://laragon.org/download/
